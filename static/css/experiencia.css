@@ -1,0 +1,103 @@
+/*Section Experiencia*/
+
+.empresas{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: -100px;
+}
+
+.empresa {
+  display: block;
+  padding: 20px;
+  background: #30303059;
+  border: 1px solid #3D3D3D;
+  border-radius: 10px;
+  position: relative;
+}
+.empresa-texto {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #fef5f5;
+  flex: 1;
+}
+
+.experiencia-titulo {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  font-weight: bold;
+      background: linear-gradient(90deg, #1488e3, #32e0b3, #4cc6ba);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+.experiencia-texto {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: #fef5f5;
+}
+
+.empresa-habilidades {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0px 10px 0px;
+  align-items: start;
+}
+
+.empresa-habilidades li {
+  line-height: 1.4;
+  font-weight: 500;
+  border-radius: 4px;
+  background: #303030;
+  color: #fef5f5;
+  padding: 5px 10px;
+  font-size: 1.125rem;
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 50px;
+  background: linear-gradient(90deg, #1488e3, #32e0b3, #4cc6ba);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+@media only screen and (max-width: 1023px){
+  .empresas {
+    grid-template-columns: 1fr;
+
+}
+}
+@media (max-width: 767px) {
+  .empresas {
+    grid-template-columns: 1fr;
+}
+  .empresa-habilidades li {
+    font-size: 1rem;
+}
+  .experiencia {
+    grid-template-columns: 2fr;
+    gap: 40px;
+  }
+  .empresa-titulo,
+  .experiencia-titulo {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+  .experiencia-texto,
+  .empresa-titulo {
+    font-size: 1rem;
+  }
+  .faculdade{
+    margin-bottom: 0;
+  }
+  .formacao-extra h3 {
+    margin-top: 20px;
+}
+}
