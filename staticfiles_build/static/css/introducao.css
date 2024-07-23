@@ -1,0 +1,90 @@
+/*intrducao*/
+
+main {
+  height: 820px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  background-image: url(../img/bg-hero-joy.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+.img-introducao {
+  max-width: 100%;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.introducao h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 140px;
+  text-align: center;
+}
+
+.introducao h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.contatos-contato {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contatos-contato li {
+  width: 50px;
+}
+
+.contatos-contato img {
+  border-radius: initial;
+}
+
+.contatos-contato img {
+  transition: transform 0.5s ease-out;
+}
+
+.contatos-contato img:hover {
+  transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 767px) {
+
+  main {
+    padding: 20px;
+    height: 620px;
+  }
+
+  .img-introducao{
+    padding-top: 40px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 180px;
+  }
+
+  .introducao h1 {
+    font-size: 2.2rem;
+    margin-top: 20px;
+  }
+
+  .introducao h2 {
+    font-size: 1.125rem;
+  }
+
+}
+
+@media screen and (max-width: 364px) {
+  .introducao h1 {
+    font-size: 1.8rem;
+  }
+}
