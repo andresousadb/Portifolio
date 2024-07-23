@@ -113,17 +113,20 @@
 @media screen and (max-width: 1023px) {
   .projetos-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
   }
 }
 
 
 @media screen and (max-width: 767px) {
   .projetos h2 {
-    margin-top: 20px;
+    margin-top: 100px;
   }
 
   .projetos-container {
     grid-template-columns: 1fr;
+
+
   }
 
   .projetos {
@@ -135,6 +138,7 @@
   .tecnologia-titulo {
     font-size: 1rem;
     letter-spacing: 0.5px;
+
   }
 
   .tecnologias-utilizadas li,

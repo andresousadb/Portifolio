@@ -134,6 +134,7 @@
 @media screen and (max-width: 767px) {
   .formacoes {
     grid-template-columns: 1fr; /* Um elemento por linha */
+
 }
 .formacoes > :nth-child(3) {
   grid-row: initial; 
@@ -142,6 +143,7 @@
   .formacao {
     grid-template-columns: 2fr;
     gap: 40px;
+    margin-bottom: -100px;
   }
   .formacao-texto {
     font-size: 1rem;
@@ -171,7 +173,40 @@
 }
 
 @media (max-width: 400px) {
+ .formacoes {
+    grid-template-columns: 1fr; /* Um elemento por linha */
+}
+.formacoes > :nth-child(3) {
+  grid-row: initial;
+  grid-column: initial;
+}
+  .formacao {
+    grid-template-columns: 2fr;
+    gap: 40px;
+  }
+  .formacao-texto {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #fef5f5;
+  }
+  .faculdade-curso {
+    font-size: 1rem;
+  }
+  .formacao-titulo,
+  .faculdade-titulo,
+  .faculdade-tipo {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+  .conclusao-instituicao li,
+  .cursos li,
+  .idiomas li {
+    font-size: 1rem;
+  }
   .faculdade {
     grid-template-columns: 1fr;
+  }
+  span.faculdade-titulo {
+    display: none;
   }
 }
